@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: statusquarkusio-dmrr
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-csxu-tenant/status-quarkus-io/statusquarkusio-dmrr@sha256:b78d983b4a1e9c6add4b19fb1c0b280274e8c90949a8020c6d1a702d1c3680cb
+        name: my-java-quarkus
+        resources: {}
+status: {}
